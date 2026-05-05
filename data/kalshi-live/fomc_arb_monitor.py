@@ -16,8 +16,8 @@ from kalshi_python.api_client import ApiClient
 STATE_FILE = Path('data/kalshi-live/fomc_arb_state.json')
 MONITOR_STATE = Path('data/kalshi-live/fomc_arb_monitor_state.json')
 
-BOT_TOKEN = '8083707922:AAHfcwoUg9Yg2vkvT-n0n723ebk1BEu95Go'
-CHAT_ID = '7829844554'
+BOT_TOKEN = os.environ['TELEGRAM_BOT_TOKEN']
+CHAT_ID = os.environ.get('TELEGRAM_CHAT_ID', '7829844554')
 
 
 def send_tg(message: str):
