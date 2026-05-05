@@ -166,3 +166,18 @@ cython_debug/
 
 # MkDocs
 site/
+
+# Security: never commit cryptographic keys / certs / secrets
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.jks
+*_private_key*
+*_secret*
+.env.local
+.env.*.local
+auth-profiles.json
+credentials.json
+service-account*.json
